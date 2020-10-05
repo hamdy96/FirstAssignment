@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>First Assignment</title>
+		<link  href="style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+
+		<h1> Welcome to our website</h1>
+		<h3> </h3>
+		<div class="container">
+			<form>
+				<fieldset>
+			    <legend>Please insert your information</legend>
+		  
+			
+				<div class="row">
+
+				<label class="col-md" style="padding: 0 17px 0 5px"> Full name <span>*</span></label>
+				<input type="text" name="fullname" placeholder="EX: John Doe" class="col-md-4">
+
+				<label class="col-md" style="padding: 0 15px 0 125px;"> Username <span>*</span></label>
+				<input type="text" name="uname" placeholder="EX: John100" class="col-md-4">
+
+				</div>
+
+				<div class="row">
+
+				<label class="col-md" style="padding: 0 20px 0 5px"> Password  <span>*</span></label>
+				<input type="password" name="password" placeholder="*********" class="col-md-4">
+
+				<label class="col-md" style="padding: 0 15px 0 60px;"> Confirm password <span>*</span></label>
+				<input type="password" name="confirm" placeholder="*********" class="col-md-4">
+
+				</div>
+
+				<div class="row">
+
+				<label class="col-md" style="padding: 0 50px 0 5px;"> Email <span>*</span></label>
+				<input type="text" name="email" placeholder="EX: john@example.com" class="col-md-4">
+
+				<label class="col-md" style="padding: 0 15px 0 142px;"> Address <span>*</span></label>
+				<input type="text" name="address" placeholder="EX: Boulevard street" class="col-md-4">
+
+				</div>
+
+				<div class="row">
+
+					<label class="col-md" style="padding: 0 35px 0 0;"> Gender : <span>*</span></label>
+					<input type="radio" id="male" name="gender" value="male" >
+					<label for="male" style="padding: 0 55px 0 0;">Male</label>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Female</label>
+
+				<label style="padding: 0 15px 0 178px;"> Country <span>*</span></label>
+				<select class="col-md-4" name="country">
+					<option value="0">------------------------</option>
+					<option value="1">Egypt</option>
+					<option value="2">USA</option>
+					<option value="3">Russia</option>
+					<option value="4">Spain</option>
+				</select>
+
+
+				<div class="row-button">
+
+				<button type="button" class="btn btn-success">Submit</button>
+
+				</div>
+			
+				</fieldset>
+			</form>
+		</div>
+
+	</body>
+</html>
