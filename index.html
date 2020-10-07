@@ -1,74 +1,113 @@
 <html>
 	<head>
 		<title>First Assignment</title>
-		<link  href="style.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<!-- JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		 <link  href="css/style.css" type="text/css" rel="stylesheet"/> 
 	</head>
 	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+			<div class="container">
+			  <a class="navbar-brand" href="index.html">Food store</a>
+	
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			  </button>
+	
+			  <div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+				  <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		  <br>
+		  <br>
+		<div class="container x_content">
+				<div class="form-horizontal form-label-left">
+					<h1 class="title"> Welcome to our website</h1>
+					<form>
+					<fieldset>
+					<legend>Please insert your information</legend>
+					<div class="form-group">
+						
+						<div class="col-sm-12">
+						   <div class="row">
+							<label class="col-sm-3 control-label">Full name *</label>
+							  <div class="col-md-3">
+								 <div class="input-group">
+									<input type="text" class="form-control" placeholder="EX: John Doe">
+								 </div>
+							  </div>
+							  <label class="col-sm-3 control-label"> Username *</label>
+							  <div class="col-md-3">
+								 <div class="input-group">
+									<input type="text" placeholder="EX: John100" class="form-control">								 </div>
+							  </div>
+						   </div>
+						   <div class="row">
+							<label class="col-sm-3 control-label">Password *</label>
+							  <div class="col-md-3">
+								 <div class="input-group">
+									<input type="password" class="form-control" placeholder="*********">
+								 </div>
+							  </div>
+							  <label class="col-sm-3 control-label"> Confirm password *</label>
+							  <div class="col-md-3">
+								 <div class="input-group">
+									<input type="password" placeholder="*********" class="form-control">								 </div>
+							  </div>
+						   </div>
+						   <div class="row">
+							<label class="col-sm-3 control-label">Email *</label>
+							  <div class="col-md-3">
+								 <div class="input-group">
+									<input type="email" class="form-control" placeholder="EX: john@example.com">
+								 </div>
+							  </div>
+							  <label class="col-sm-3 control-label"> Address *</label>
+							  <div class="col-md-3">
+								 <div class="input-group">
+									<input type="text" placeholder="EX: Boulevard street" class="form-control">								 </div>
+							  </div>
+						   </div>
+						   <div class="row">
+							<label class="col-sm-3 control-label">Gender *</label>
+							  <div class="col-md-3">
+								 <div class="input-group">
+									<input type="radio" id="male" name="gender" value="male" class="form-control">
+									<label for="male">Male</label>
+									<input type="radio" id="female" name="gender" value="female" class="form-control">
+									<label for="female">Female</label>
+								 </div>
+							  </div>
+							  <label class="col-sm-3 control-label"> Country *</label>
+							  <div class="col-md-3">
+								 <div class="input-group">
+									<select class="form-control" name="country">
+										<option value="0">------------------------</option>
+										<option value="1">Egypt</option>
+										<option value="2">USA</option>
+										<option value="3">Russia</option>
+										<option value="4">Spain</option>
+									</select>
+								</div>
+						   </div>
+						</div>
 
-		<h1> Welcome to our website</h1>
-		<h3> </h3>
-		<div class="container">
-			<form>
-				<fieldset>
-			    <legend>Please insert your information</legend>
-		  
-			
-				<div class="row">
+						<button type="button" class="btn btn-primary">Submit</button>
 
-				<label class="col-md" style="padding: 0 17px 0 5px"> Full name <span>*</span></label>
-				<input type="text" name="fullname" placeholder="EX: John Doe" class="col-md-4">
-
-				<label class="col-md" style="padding: 0 15px 0 125px;"> Username <span>*</span></label>
-				<input type="text" name="uname" placeholder="EX: John100" class="col-md-4">
-
-				</div>
-
-				<div class="row">
-
-				<label class="col-md" style="padding: 0 20px 0 5px"> Password  <span>*</span></label>
-				<input type="password" name="password" placeholder="*********" class="col-md-4">
-
-				<label class="col-md" style="padding: 0 15px 0 60px;"> Confirm password <span>*</span></label>
-				<input type="password" name="confirm" placeholder="*********" class="col-md-4">
-
-				</div>
-
-				<div class="row">
-
-				<label class="col-md" style="padding: 0 50px 0 5px;"> Email <span>*</span></label>
-				<input type="text" name="email" placeholder="EX: john@example.com" class="col-md-4">
-
-				<label class="col-md" style="padding: 0 15px 0 142px;"> Address <span>*</span></label>
-				<input type="text" name="address" placeholder="EX: Boulevard street" class="col-md-4">
-
-				</div>
-
-				<div class="row">
-
-					<label class="col-md" style="padding: 0 35px 0 0;"> Gender : <span>*</span></label>
-					<input type="radio" id="male" name="gender" value="male" >
-					<label for="male" style="padding: 0 55px 0 0;">Male</label>
-					<input type="radio" id="female" name="gender" value="female">
-					<label for="female">Female</label>
-
-				<label style="padding: 0 15px 0 178px;"> Country <span>*</span></label>
-				<select class="col-md-4" name="country">
-					<option value="0">------------------------</option>
-					<option value="1">Egypt</option>
-					<option value="2">USA</option>
-					<option value="3">Russia</option>
-					<option value="4">Spain</option>
-				</select>
-
-
-				<div class="row-button">
-
-				<button type="button" class="btn btn-success">Submit</button>
-
-				</div>
-			
-				</fieldset>
-			</form>
+					</fieldset>
+				</form>
+			 </div>
+		</div>				
+		
+				
 		</div>
 
 	</body>

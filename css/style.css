@@ -2,94 +2,48 @@ body{
 
 	background-image: url(../images/gallery_01.jpg);
 	background-repeat: no-repeat;
-  	background-size: 100%;
-}
-
-
-h1 {
-
+	background-size: 100%;
 	text-align: center;
-	color: black;
-	padding-top: 150px;
-}
+	color: white;
 
-legend {
-	text-align: center;
+}
+.title{
+	padding-top: 20px;
+
+}
+.title2{
 	color: black;
 }
-
 fieldset {
 	padding-top: 30px;
+	width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+	border-bottom:none;
+	
+	
 }
 
-.container {
-	padding-left: 200px;
-	padding-right: 200px;
+.x_content{
+	background-color: #485f4d9f;
 }
 
-.col-md-4 {
-	position: relative;
-	width: 250px;
-	padding-right: 15px;
-	padding-left: 15px;
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 33.33333%;
-	flex: 0 0 33.33333%;
-	max-width: 33.33333%; 
+.y_content{
+	background-color: #5072579f;
 }
-
   
 .row {
 	padding-top: 10px;
-}
-
-.row-button {
-	position: relative;
-	padding-left: 380px;
-}
-
-select {
-	padding: 10px 0px;
-	border: none;
-	border-radius: 4px;
-	background-color: #f1f1f1;
-}
-
-input {
-	padding: 10px 0px;
-	border: none;
-	border-radius: 4px;
-	background-color: #f1f1f1;
 }
 
 form {
 	font-size: 20px;
 }
 
-.row button{
-	margin: 30px;
+
+img{
+	width: 20%;
 }
 
-.btn {
-	background-color: transparent;
-	border: 1px solid transparent;
-	padding: 0.375rem 0.75rem;
-	font-size: 1rem;
-	line-height: 1.5;
-	border-radius: 0.25rem;
+.modal{
+	color: black;
 }
-
-
-.btn-success {
-	color: #fff;
-	background-color: #28a745;
-	border-color: #28a745; 
-}
-
-.btn-success:hover {
-  	color: #fff;
-  	background-color: #218838;
-  	border-color: #1e7e34; 
-}
-
-

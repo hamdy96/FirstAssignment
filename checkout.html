@@ -1,75 +1,156 @@
 <html>
 	<head>
+
 		<title>Checkout</title>
-		<link  href="css/checkout.css" type="text/css" rel="stylesheet"/>
-
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link  href="css/style.css" type="text/css" rel="stylesheet"/> 
 		
-
 	</head>
 	<body>
+			<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+				<div class="container">
+				  <a class="navbar-brand" href="index.html">Food store</a>
+		
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="oi oi-menu"></span> Menu
+				  </button>
+		
+				  <div class="collapse navbar-collapse" id="ftco-nav">
+					<ul class="navbar-nav ml-auto">
+					  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					  <li class="nav-item active"><a href="checkout.html" class="nav-link">Checkout</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </nav>
+			  <br>
+			  <br>
+			  <h1 class="title2"> Checkout</h1>
+			  <div class="container">
+				<div class="row">
+				<div class="col-md-1"></div>
 
-		<h1>Checkout</h1>
-		<div class="container">
-				<fieldset>
-			    <legend>Contact information:</legend>
-		  
-				<h4>Full name: Hassan Hamdy</h4>
+			  <div class="x_content col-md-4">
+					<div class="form-horizontal form-label-left">
+						<fieldset>
+						<legend>Contact information</legend>
+						<div class="form-group">
+							<div class="col-md-12">
+							   <div class="row">
+								<label class="col-sm-4 control-label">Full name </label>
+								  <div class="col-md-6">
+									 <div class="input-group">
+										<label class="control-label">Hassan Hamdy</label>									 
+									</div>
+								  </div>
+							   </div>
+							   <div class="row">
+								<label class="col-sm-3 control-label">Email </label>
+								  <div class="col-md-3">
+									 <div class="input-group">
+										<label class="control-label">hassanhamdy96@gmail.com</label>									 
+									</div>
+								  </div>
+								</div>
+							   <div class="row">
+								  <label class="col-sm-3 control-label"> Phone</label>
+								  <div class="col-md-3">
+									 <div class="input-group">
+										<label class="control-label">0123456789</label>									 
+									</div>
+								  </div>
+							   </div>
+							   <div class="row">
+								<label class="col-sm-3 control-label">Address</label>
+								  <div class="col-md-9">
+									 <div class="input-group">
+										<label class="control-label">24 Takka Street - Nasrcity</label>									 
+									</div>
+								  </div>
+							   </div>	
+						</fieldset>
+				 </div>
+			</div>		
+			<div class="col-md-1"></div>		
+			<div class="y_content col-md-5">
+				<div class="form-horizontal form-label-left">
+					<fieldset>
+					<legend>Order Summary</legend>
+					<div class="form-group">
+						<div class="col-md-12">
+						   <div class="row">
 
-				<h4>Email: hassanhamdy96@gmail.com</h4>
+							<img class="col-sm-3 control-label" src="images/pizza1.jpg">
+							<div class="col-md-4">
+								<div class="input-group">
+									<label class="control-label">100 L.E</label>	
+									<label class="control-label">Chicken Ranch</label>	
+									<label class="control-label">1X Large</label>	
+								</div>
+							 </div>
+							  
+						   </div>
+						   <div class="row">
 
-				<h4>Phone: +2 0123456789 </h4>
-
-				<h4>Address: 24 Takka Street - Nasrcity </h4>
-			
-				</fieldset>
+							<img class="col-sm-3 control-label" src="images/pizza2.jpg">
+							<div class="col-md-4">
+								<div class="input-group">
+									<label class="control-label">70 L.E</label>	
+									<label class="control-label">Buffalo Popers</label>	
+									<label class="control-label">1X Medium</label>	
+								</div>
+							 </div>
+							  
+						   </div>
+						   <br>
+							<button type="button" id="myBtn" class="col-sm-12 btn btn-success" data-toggle="modal" data-target="#Modal">Checkout</button>
+					</fieldset>
+			 </div>
 		</div>
+		<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Order Total</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+					<div class="col-md-10">
+						<div class="input-group">
+							<label class="control-label">1x Chicken Ranch : 100 L.E</label>	<br>
+							<label class="control-label">1x Buffalo popers : 70 L.E</label>	<br>
+						</div>
+						<div class="input-group">
+							<label class="control-label">Taxes 14%  : 23.8 L.E</label>	
+						</div>
+					 </div>
+					<hr>
 
-		<div class="container2">
-				<fieldset>
+					<div class="col-md-12">
+						<div class="input-group">
+						<label class="control-label">Total : 193.8 L.E</label>
+						</div>
+					</div>	
 
-			    <legend>Order Summary</legend>
-		  
-				<img class="order-img" src="images/pizza1.jpg">
-
-				<h4 class="order-price">100 L.E </h4>
-
-				<h4 class="order-item">Chicken Ranch</h4>
-
-				<h4 class="order-item">1x Large </h4>
-
-				<img class="order-img" src="images/pizza2.jpg">
-
-				<h4 class="order-price">70 L.E </h4>
-
-				<h4 class="order-item">Buffalo Popers</h4>
-
-				<h4 class="order-item">1x Medium </h4>
-			
-				</fieldset>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				  <button type="button" class="btn btn-success">Proceed</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		</div>
-
-		<div class="button">
-		<button type="button" id="myBtn" class="btn btn-success">Checkout</button>
-	</div>
-
-
-	<div id="myModal" class="modal">
-		<div class="modal-title">
-			
 		</div>
-	  <div class="modal-content">
-	    <span class="close">&times;</span>
-	    <p>1x Chicken Ranch : 100 L.E</p>
-	    <p>1x Buffalo popers : 70 L.E</p>
-	    <p>Taxes 14%  : 23.8 L.E </p>
-	    <hr>
-	    <p>Order Total : 193.8 L.E</p>
-	  </div>
-
-	</div>
-
-	</body>
+					
+	
+		</body>
 
 	<script src="js/script.js"></script>
-	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		 
 </html>
